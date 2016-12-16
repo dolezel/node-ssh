@@ -28,6 +28,7 @@ class SSH {
           if (this.connection === connection) {
             this.connection = null
           }
+          reject()
         })
         connection.connect(config)
       })
